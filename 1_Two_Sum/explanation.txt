@@ -1,0 +1,9 @@
+after reading the problem, the easiest way is to loop through. works but can be slow upon bigger inputs
+since it is bruteforce, ill try to avoid
+
+second path is to use hash maps, but there is a possibility to have duplicate keys, in that case, while building the hash map
+you overwrite keys, there is a workaround for it, if you properly handle the loop to get your solution
+
+but i prefer another way, this way works also because you are given the constraint that ONLY ONE ANSWER is valid, therefore leetcode crafted the possibilities and approaches to not be so complicated
+as you build your hash map, you check if the complement (target-key) exists, if not, you add it to the hashmap, simple as that.
+
